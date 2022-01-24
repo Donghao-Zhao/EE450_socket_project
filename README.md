@@ -28,12 +28,12 @@ b. What my code files are and what each one of them does.
 
 * central.c:
 
-  1. Bootup and setup TCP and UDP connection on certain ports of the central server(serverC).
-  2. Waiting to accept client's connection and receive usernames information sent from clients using TCP.
-  3. Send the usernames to serverT to request and receive the topology graph related with the usernames. 
-  4. Process the data received from serverT and send a request to serverS to get the score of the usernames within the topology graph.
-  5. Combine the information received from clients, serverT, serverS, send the processing request to serverP and receive the matching information.
-  6. Forward matching information to all clients, then loop to step 2.
+1. Bootup and setup TCP and UDP connection on certain ports of the central server(serverC).
+2. Waiting to accept client's connection and receive usernames information sent from clients using TCP.
+3. Send the usernames to serverT to request and receive the topology graph related with the usernames. 
+4. Process the data received from serverT and send a request to serverS to get the score of the usernames within the topology graph.
+5. Combine the information received from clients, serverT, serverS, send the processing request to serverP and receive the matching information.
+6. Forward matching information to all clients, then loop to step 2.
 
 
 * clientA.c:
@@ -75,7 +75,7 @@ b. What my code files are and what each one of them does.
 
 c. The format of all the messages exchanged.
 
-Here is an example when clientA's input is Victor and clientB's input is Oliver and there is a match.
+  Here is an example when clientA's input is Victor and clientB's input is Oliver and there is a match.
 
 
 1. Command to start clientA: ./clientA Victor.
