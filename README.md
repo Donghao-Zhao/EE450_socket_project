@@ -75,10 +75,10 @@ b. What my code files are and what each one of them does.
 
 c. The format of all the messages exchanged.
 
-  Here is an example when clientA's input is Victor and clientB's input is Oliver and there is a match.
+Here is an example when clientA's input is Victor and clientB's input is Oliver and there is a match.
 
 
-* 1. Command to start clientA: ./clientA Victor.
+* 1. Command to start clientA: ./clientA Victor:
 
   Console output of clientA:
 
