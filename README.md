@@ -5,8 +5,8 @@ a. What I have done in the assignment.
 
 * Phase 1: 
 
-Phase 1A: establish the connections between the Clients and Server C
-Phase 1B: establish the connections between Server C and all other backend servers
+  Phase 1A: establish the connections between the Clients and Server C
+  Phase 1B: establish the connections between Server C and all other backend servers
 
 * Phase 2: 
 
