@@ -3,19 +3,19 @@
 
 a. What I have done in the assignment.
 
-Phase 1: 
+* Phase 1: 
 
 Phase 1A: establish the connections between the Clients and Server C
 Phase 1B: establish the connections between Server C and all other backend servers
 
-Phase 2: 
+* Phase 2: 
 
 After receiving messages from both clients, server C will contact server T to retrieve Topology 
 data and server S to retrieve Score data, then forward them to server P. Server P will calculate 
 and find a social network path that has the smallest matching gap based on the information 
 provided by server C.
 
-Phase 3: 
+* Phase 3: 
 
 Server P then send the social network path that has the smallest matching gap to the server C, 
 server C will then relay the information to all clients, and clients will see the matching information 
