@@ -78,7 +78,7 @@ c. The format of all the messages exchanged.
   Here is an example when clientA's input is Victor and clientB's input is Oliver and there is a match.
 
 
-1. Command to start clientA: ./clientA Victor.
+* 1. Command to start clientA: ./clientA Victor.
 
   Console output of clientA:
 
@@ -90,7 +90,7 @@ c. The format of all the messages exchanged.
   Compatibility score: 1.06
 
 
-2. Command to start clientB: ./clientB Oliver.
+* 2. Command to start clientB: ./clientB Oliver.
 
 Console output of clientB:
 
@@ -102,7 +102,7 @@ Oliver --- Rachael --- Victor
 Compatibility score: 1.06
 
 
-3. Command to start serverC: ./serverC.
+* 3. Command to start serverC: ./serverC.
 
 Console output of serverC(central server):
 
@@ -119,7 +119,7 @@ The Central server sent the results to clientA.
 The Central server sent the results to clientB.
 
 
-4. Command to start serverT: ./serverT.
+* 4. Command to start serverT: ./serverT.
 
 Console output of serverT:
 
@@ -128,7 +128,7 @@ The ServerT received a request from Central to get the topology.
 The ServerT finished sending the topology to Central.
 
 
-5. Command to start serverS: ./serverS
+* 5. Command to start serverS: ./serverS
 
 Console output of serverS.
 
@@ -137,7 +137,7 @@ The ServerS received a request from Central to get the scores.
 The ServerS finished sending the scores to Central.
 
 
-6. Command to start serverP: ./serverP
+* 6. Command to start serverP: ./serverP
 
 Console output of serverP.
 
@@ -149,7 +149,7 @@ The ServerP finished sending the results to the central.
 Here is an example when clientA's input is Victor and clientB's input is Hanieh and there is no match.
 
 
-1. Command to start clientA: ./clientA Victor.
+* 1. Command to start clientA: ./clientA Victor.
 
 Console output of clientA:
 
@@ -159,7 +159,7 @@ The client sent Victor to the Central server.
 Found no compatibility between Victor and Hanieh.
 
 
-2. Command to start clientB: ./clientB Hanieh.
+* 2. Command to start clientB: ./clientB Hanieh.
 
 Console output of clientB:
 
@@ -169,20 +169,20 @@ The client sent Hanieh to the Central server.
 Found no compatibility between Hanieh and Victor.
 
 
-3. All of the message exchange of the servers are the same with what is mentioned above.
+* 3. All of the message exchange of the servers are the same with what is mentioned above.
 
 
 
 g. Idiosyncrasy of my project.
 
-Due to the serverC combined all information in one buffer and send them to serverP, 
-the program might crash when the graph and score information exceed the size of the array or 
-the size of the sending buffer that UDP's "sendto()" function can support. The size of arrays 
-should change based on demand.
+  Due to the serverC combined all information in one buffer and send them to serverP, 
+  the program might crash when the graph and score information exceed the size of the array or 
+  the size of the sending buffer that UDP's "sendto()" function can support. The size of arrays 
+  should change based on demand.
 
 
 h. Reused Code.
 
-The initiation of TCP and UDP connection refers to the Beej’s Guide to Network Programming.
-The functions and variables are similar with those in the book, and I have commented them in my codes.
+  The initiation of TCP and UDP connection refers to the Beej’s Guide to Network Programming.
+  The functions and variables are similar with those in the book, and I have commented them in my codes.
 
