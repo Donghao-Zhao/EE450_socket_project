@@ -17,9 +17,9 @@ a. What I have done in the assignment.
 
 * Phase 3: 
 
-Server P then send the social network path that has the smallest matching gap to the server C, 
-server C will then relay the information to all clients, and clients will see the matching information 
-on their screen. If there's no path, then according information will display.
+  Server P then send the social network path that has the smallest matching gap to the server C, 
+  server C will then relay the information to all clients, and clients will see the matching information 
+  on their screen. If there's no path, then according information will display.
 
 
 
@@ -80,14 +80,14 @@ c. The format of all the messages exchanged.
 
 1. Command to start clientA: ./clientA Victor.
 
-Console output of clientA:
+  Console output of clientA:
 
-The client is up and running.
+  The client is up and running.
 
-The client sent Victor to the Central server.
-Found compatibility for Victor and Oliver:
-Victor --- Rachael --- Oliver
-Compatibility score: 1.06
+  The client sent Victor to the Central server.
+  Found compatibility for Victor and Oliver:
+  Victor --- Rachael --- Oliver
+  Compatibility score: 1.06
 
 
 2. Command to start clientB: ./clientB Oliver.
