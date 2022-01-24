@@ -10,10 +10,10 @@ a. What I have done in the assignment.
 
 * Phase 2: 
 
-After receiving messages from both clients, server C will contact server T to retrieve Topology 
-data and server S to retrieve Score data, then forward them to server P. Server P will calculate 
-and find a social network path that has the smallest matching gap based on the information 
-provided by server C.
+  After receiving messages from both clients, server C will contact server T to retrieve Topology 
+  data and server S to retrieve Score data, then forward them to server P. Server P will calculate 
+  and find a social network path that has the smallest matching gap based on the information 
+  provided by server C.
 
 * Phase 3: 
 
@@ -28,12 +28,12 @@ b. What my code files are and what each one of them does.
 
 * central.c:
 
-1. Bootup and setup TCP and UDP connection on certain ports of the central server(serverC).
-2. Waiting to accept client's connection and receive usernames information sent from clients using TCP.
-3. Send the usernames to serverT to request and receive the topology graph related with the usernames. 
-4. Process the data received from serverT and send a request to serverS to get the score of the usernames within the topology graph.
-5. Combine the information received from clients, serverT, serverS, send the processing request to serverP and receive the matching information.
-6. Forward matching information to all clients, then loop to step 2.
+  1. Bootup and setup TCP and UDP connection on certain ports of the central server(serverC).
+  2. Waiting to accept client's connection and receive usernames information sent from clients using TCP.
+  3. Send the usernames to serverT to request and receive the topology graph related with the usernames. 
+  4. Process the data received from serverT and send a request to serverS to get the score of the usernames within the topology graph.
+  5. Combine the information received from clients, serverT, serverS, send the processing request to serverP and receive the matching information.
+  6. Forward matching information to all clients, then loop to step 2.
 
 
 * clientA.c:
